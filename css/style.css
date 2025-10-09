@@ -12,7 +12,7 @@
     --main-text-color: #fff;
     --border-color: #999;
     --bio-bg-color: #1e2a3a;
-    --about-bg-color: #111821;
+    --about-bg-color: #3d3f41;
 
 }
 
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: row;
     color: var(--main-text-color);
+    min-height: 100vh;
 }
 #bio-container {
     flex: 1 1 20%;
@@ -34,12 +35,12 @@
     background-color: var(--bio-bg-color);
     text-align: center;
     padding: 30px 12px;
-    border-right: 5px solid var(--bio-bg-color);
+    border-right: 5px solid var(--border-color);
 }
 #about-container {
     flex: 1 1 80%;
     min-height: 100vh;
-    background-color: var(--bio-bg-color);
+    background-color: var(--about-bg-color);
     padding: 50px;
     }
 
@@ -50,7 +51,7 @@
 #bio-container p {
     margin-bottom: 20px;
 }
-#biocontainer #welcome-text{
+#welcome-text{
     font-weight: bold;
 }
 #bio-image {
@@ -58,6 +59,7 @@
     height: 175px;
     border-radius: 50%;
     margin-bottom: 25px;
+    object-fit: cover; /* Adicionado para evitar distorção */
 } 
 #social-container {
     display: flex;
@@ -74,10 +76,15 @@
 #social-container li a {
     color: var(--main-color);
     font-size: 30px;
+    transition: color 0.3s;
+}
+#social-container li a:hover {
+    color: var(--main-text-color);
 }
 #email-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Adicionado para centralizar verticalmente */
 }
 #email-container ion-icon,
 #email-container a {
@@ -87,8 +94,11 @@
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 225px;
+    transition: color 0.3s; /* Adicionado efeito hover */
 }
-
+#email-container a:hover {
+    color: var(--main-color);
+}
 #email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
@@ -108,26 +118,30 @@
 }
 .description {
     max-width: 75%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Adicionado para melhor legibilidade */
 }
 #btn-projects {
     font-weight: bold;
     font-size: 16px;
     color: var(--main-text-color);
-    background-color: var(--main-color);
+    background-color: rgb(18, 135, 182);
     border: 2px solid var(--main-color);
     border-radius: 5px;
     text-decoration: none;
     transition: .5s;
     margin: 25px 0;
-    padding: 12px 10px;
-    width: 150px;
+    padding: 12px 20px;
+    width: 180px;
     text-align: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Adicionado espaçamento entre ícone e texto */
 }
 #btn-projects ion-icon,
 #btn-projects span {
-  flex: 1 1 0;
+  flex: 1 1 auto;
 }
 
 #btn-projects ion-icon {
@@ -150,26 +164,42 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
+  gap: 20px; 
 }
 
 .skills-box {
-  flex: 1 1 33%;
-  max-width: 33%;
+  flex: 1 1 calc(33.333% - 20px); /* Corrigido cálculo com gap */
+  min-width: 250px;
   margin-bottom: 35px;
+  padding: 20px;
+  background-color: rgba(253, 250, 250, 0.486);   
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
-
+.skills-box:hover {
+    transform: translateY(-5px);
+}
 .skills-title {
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: 20px;
+  margin-bottom: 15px;
   font-weight: bold;
   padding-left: 10px;
   border-left: 5px solid var(--main-color);
 }
 
 .skills-box i {
-  font-size: 45px;
-  margin-right: 10px;
+  font-size: 40px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Adicionado efeito hover */
 }
+}
+.skills-box i:hover {
+    transform: scale(1.2);
+}
+
+
+
 
 /* Mobile */
 @media(max-width: 450px) {

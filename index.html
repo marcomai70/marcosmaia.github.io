@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Marcos Maia</title>
-<!--fontes google-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfólio Marcos Maia</title>
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<!--Dev Icon Fontes-->
-
-            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-<!--CSS do projeto-->          
+    <!-- Dev Icon Fontes -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- CSS do projeto -->          
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main id="container">
         <aside id="bio-container">
             <h2>Marcos Maia</h2>
-            <img id="bio-image"  src="img/foto.png" alt="Marcos Maia">
-            <p>Olá, meu nome é Marcos Maia e sou <span class="highlight">Analista QA</span><div class=""></div></p>
+            <img id="bio-image" src="img/foto.png" alt="Marcos Maia">
+            <p>Olá, meu nome é Marcos Maia e sou <span class="highlight">Analista QA</span>.</p>
             <p id="welcome-text">Seja Bem-vindo!</p>  
             <ul id="social-container">
                 <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -28,57 +29,74 @@
                 <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
             </ul>  
             <div id="email-container">
-                <ion-icon name="mail-outline"> </ion-icon> <a href="mailto:bateramarcomai@hotmail.com"> bateramarcomai@hotmail.com</a>
+                <ion-icon name="mail-outline"></ion-icon> 
+                <a href="mailto:bateramarcomai@hotmail.com">bateramarcomai@hotmail.com</a>
             </div>   
         </aside>
+        
         <section id="about-container">
             <h1 id="name">Marcos Maia</h1>
             <p id="title"><span class="highlight">Analista QA</span></p>
-            <p class="description">Sou Analista de QA/Testes de Software com experiência em sistemas bancários, seguros, saúde, varejo, e-commerce, governo, entre outros. Gosto de participar do projeto desde a <span class="highlight">definição das regras de negócio e levantamento de requisitos</span>até o<spam class="highlight">teste de Aceite</spam></p>
-            <a href="#" id="btn-projects"><ion-icon name="share-social-outlina"></ion-icon></ion-icon><span>Ver Projetos</span></a>
+            
+            <!-- TEXTO MELHORADO - 2 PARÁGRAFOS CONCISOS -->
+            <p class="description"><span class="highlight">Analista de QA Sênior</span> com expertise multissetorial em bancos, seguros, saúde, varejo e e-commerce. Atuo de forma <span class="highlight">estratégica e preventiva</span> em todo o ciclo de desenvolvimento, desde a definição de regras de negócio até a execução de <span class="highlight">testes de aceite</span> com stakeholders.</p>
+
+            <p class="description">Especialista em <span class="highlight">garantia de qualidade end-to-end</span>, desenvolvimento de planos de teste e automação. Domínio em testes <span class="highlight">funcionais e não-funcionais</span>, com foco em <span class="highlight">qualidade contínua</span> e entrega de produtos que superam expectativas técnicas e de negócio.</p>
+            
+            <a href="#" id="btn-projects">
+                <ion-icon name="share-social-outline"></ion-icon>
+                <span>Ver Projetos</span>
+            </a>
+            
             <h2 id="skills-section-title">Minhas Skills</h2>
             <p class="description">Conheça as tecnologias que domino:</p>
+            
             <div id="skills-container">
-                <div id="skill-box">
-                    <p id="skill-title">Front-end</p>
+                <div class="skills-box">
+                    <p class="skills-title">Front-end</p>
                     <i class="devicon-javascript-plain colored"></i>
                     <i class="devicon-html5-plain colored"></i>
                     <i class="devicon-css3-plain colored"></i>
                 </div>
-                <div id="skill-box">
-                    <p id="skill-title">Versionamento</p>
+                
+                <div class="skills-box">
+                    <p class="skills-title">Versionamento</p>
                     <i class="devicon-git-plain colored"></i>
                     <i class="devicon-github-plain colored"></i>
-                    <i class="devicon-trello-plain colored"></i>
-                </div><div id="skill-box">
-                    <p id="skill-title">Automação</p>
+                </div>
+                
+                <div class="skills-box">
+                    <p class="skills-title">Automação</p>
+                    <i class="devicon-cypressio-plain "></i>
                     <i class="devicon-cucumber-plain colored"></i>
                     <i class="devicon-selenium-plain colored"></i>
-                    <i class="devicon-cypressio-plain colored"></i>
-                </div><div id="skill-box">
-                    <p id="skill-title">Back-end</p>
-                    <i class="devicon-windows11-plain colored"></i>
+                </div>
+                
+                <div class="skills-box">
+                    <p class="skills-title">Back-end</p>
                     <i class="devicon-java-plain colored"></i>
                     <i class="devicon-csharp-plain colored"></i>
-                </div><div id="skill-box">
-                    <p id="skill-title">Banco de dados</p>
-                    <i class="devicon-docker-plain colored"></i>
+                </div>
+                
+                <div class="skills-box">
+                    <p class="skills-title">Banco de dados</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                    <i class="devicon-postgresql-plain colored"></i>
                     <i class="devicon-azuresqldatabase-plain colored"></i>
-                    <i class="devicon-azuredevops-plain colored"></i>
-                </div><div id="skill-box">
-                    <p id="skill-title">APIs</p>
+                </div>
+                
+                <div class="skills-box">
+                    <p class="skills-title">Ferramentas</p>
                     <i class="devicon-postman-plain colored"></i>
-                    <i class="devicon-filezilla-plain colored"></i>
+                    <i class="devicon-docker-plain colored"></i>
+                    <i class="devicon-azuredevops-plain colored"></i>
                 </div>
             </div>
-
         </section>
-    </main><p class="description">Atuo tanto em testes <span class="highlight"> Funcionais </span>como em testes<spam class="highlight"> Não Funcionais, </spam>amo tecnologia, estou sempre estudando para me tornar cada vez melhor contribuindo para garantir a qualidade das aplicações através dos testes. </p>
+    </main>
 
-</section>
-   
-    <!--ION ICONS-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+    <!-- ION ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
 </body>
 </html>
