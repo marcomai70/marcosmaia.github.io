@@ -193,7 +193,7 @@
   margin-bottom: 10px;
   transition: transform 0.3s; /* Adicionado efeito hover */
 }
-}
+
 .skills-box i:hover {
     transform: scale(1.2);
 }
